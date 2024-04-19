@@ -37,10 +37,7 @@ public class Money
         {
             return checked((nominal * num) / price);
         }
-        catch (DivideByZeroException)
-        {
-            throw new DivideByZeroException("Can't divide by zero");
-        }
+       
         catch (OverflowException)
         {
             throw new OverflowException("Arithmetic operation resulted in an overflow.");
